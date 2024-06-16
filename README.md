@@ -1,19 +1,8 @@
 # WKY Pwn
 
-这个脚本是来自于 <a href=https://github.com/TheOfficialFloW/PPPwn>PPPwn</a> and <a href=https://github.com/xfangfang/PPPwn_cpp>PPPwn_cpp</a> 关于针对 Amlogic S805来运行 <a href=https://github.com/GoldHEN/GoldHEN>GoldHen</a> 在PS4 的 11.0, 10.01, 10.00, 9.00版本进行自动化运行<br>
+这个脚本是来自于 <a href=https://github.com/TheOfficialFloW/PPPwn>PPPwn</a> and <a href=https://github.com/xfangfang/PPPwn_cpp>PPPwn_cpp</a> 关于针对 Amlogic S805来运行 <a href=https://github.com/GoldHEN/GoldHEN>GoldHen</a> 在PS4 的 11.0, 10.01, 10.00, 9.60,9.00版本进行自动化运行<br>
 该脚本基本由[PI-Pwn](https://github.com/stooged/PI-Pwn)来修改而成。
 
-~~PS：为什么淘宝会有399的商家去卖PS4的自动破解工具？？？~~
-
-PS：有问题可以提issue，请勿删除github链接哈=。=
-
-
-
-~~已知问题：破解后玩客云无法自动关机~~  #该问题已被修复
-
-2024-5-21 更新中文脚本，整合53端口被占用脚本
-
-<br>
 
 ## 测试设备
 
@@ -52,28 +41,13 @@ S805 类似架构设备等·····
 sudo apt update
 sudo apt install git -y
 sudo rm -r WKY-Pwn
-git clone https://github.com/Mintneko/WKY-Pwn 
+git clone https://github.com/Alex-Anjx/WKY-Pwn 
 sudo mkdir /boot/firmware/
 cd WKY-Pwn
 sudo cp -r PPPwn /boot/firmware/
 cd /boot/firmware/PPPwn
 sudo chmod 777 *
 sudo bash install.sh
-```
-### 中国大陆用户可以执行以下汉化脚本
-```sh
-sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime #修改时区为中国大陆  
-bash <(curl -sSL https://linuxmirrors.cn/main.sh)  #选1即可
-sudo apt update
-sudo apt install git unzip wget -y
-sudo rm -r WKY-Pwn-main main.zip WKY-Pwn
-wget https://mirror.ghproxy.com/https://github.com/Mintneko/WKY-Pwn/archive/refs/heads/main.zip  && unzip main.zip
-sudo mkdir /boot/firmware/
-cd WKY-Pwn-main
-sudo cp -r PPPwn /boot/firmware/
-cd /boot/firmware/PPPwn
-sudo chmod 777 *
-sudo bash install_ch.sh
 ```
 <br>
 
